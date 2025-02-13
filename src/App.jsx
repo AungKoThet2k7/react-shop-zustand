@@ -7,8 +7,6 @@ export default function App() {
   return (
     <>
       <Header />
-      <CategorySection />
-      <ProductSection />
       <Footer />
     </>
   );
