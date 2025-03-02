@@ -5,7 +5,7 @@ import CartSection from "../components/CartSection";
 
 const MyCart = () => {
   return (
-    <Container>
+    <Container className="px-5">
       <Breadcrumb currentpageTitle="My Cart" />
       <CartSection />
     </Container>
