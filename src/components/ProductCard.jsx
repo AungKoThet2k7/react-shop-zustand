@@ -42,7 +42,7 @@ const ProductCard = ({
   return (
     <div
       onClick={handleOpenDetail}
-      className="border border-black p-5 flex flex-col items-start gap-5"
+      className="border bg-gray-50 rounded-lg border-black p-5 flex flex-col items-start gap-5"
     >
       <img src={image} className="h-40" alt="" />
       <p className="font-bold line-clamp-2">{title}</p>
