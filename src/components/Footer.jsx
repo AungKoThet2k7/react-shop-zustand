@@ -4,11 +4,11 @@ import Container from "./Container";
 const Footer = () => {
   const date = new Date();
   return (
-    <footer className="bg-black text-white text-center py-4 mx-5 mt-auto">
+    <footer className="bg-[#2d3f52] text-white text-center py-4 mt-auto z-10">
       <Container>
-        {date.getFullYear()}{" "}
-        <a href="#" className="underline text-gray-400">
-          MMS IT
+        Copyright &copy; {date.getFullYear()}{" "}
+        <a href="" className="underline text-sky-400">
+          Mini Shop
         </a>
         . All rights reserved.
       </Container>

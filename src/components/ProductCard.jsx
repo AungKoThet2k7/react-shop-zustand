@@ -42,24 +42,24 @@ const ProductCard = ({
   return (
     <div
       onClick={handleOpenDetail}
-      className="border bg-gray-50 rounded-lg border-black p-5 flex flex-col items-start gap-5"
+      className="border border-gray-200 shadow-md hover:shadow-xl hover:scale-105 duration-300 bg-white rounded-lg p-5 flex flex-col items-start gap-5"
     >
       <img src={image} className="h-40" alt="" />
-      <p className="font-bold line-clamp-2">{title}</p>
+      <p className="font-bold line-clamp-1">{title}</p>
       <Rating rate={rate} />
       <div className="flex justify-between items-end w-full">
         <p>$ {price}</p>
         {carts.find((cart) => cart.productId == id) ? (
           <button
             onClick={handleAddedCart}
-            className="border border-black bg-black text-white px-2 py-1"
+            className="border border-black bg-black text-white shadow hover:shadow-md hover:scale-105 duration-300  rounded-full px-3 py-1"
           >
             Added
           </button>
         ) : (
           <button
             onClick={handleAddCart}
-            className="border border-black px-3 py-1"
+            className="border border-gray-200 shadow hover:shadow-md hover:scale-105 duration-300 rounded-full px-3 py-1"
           >
             Add to Cart
           </button>

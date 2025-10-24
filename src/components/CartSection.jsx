@@ -23,7 +23,7 @@ const CartSection = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-5 h-full ">
+      <div className="flex flex-col gap-5  mt-20">
         {carts.map((cart) => (
           <Cart key={cart.id} cart={cart} />
         ))}
@@ -37,9 +37,7 @@ const CartSection = () => {
         )}
 
         <div
-          className={`bg-white w-full ${
-            carts.length <= 2 && "absolute"
-          } bottom-10 left-0`}
+          className="bg-white flex"
         >
           <Container className="px-5">
             <div className="flex justify-end gap-20 border-t border-t-black py-5">
@@ -57,7 +55,7 @@ const CartSection = () => {
               </div>
             </div>
             <div className="text-end mb-7">
-              <Link className="border border-black px-4 py-1">Order Now</Link>
+              <Link className="border border-gray-200 shadow duration-300 rounded-full px-3 py-1">Order Now</Link>
             </div>
           </Container>
         </div>

@@ -34,7 +34,7 @@ const Cart = ({ cart: { id, productId, quantity } }) => {
   };
 
   return (
-    <div className="border border-black grid grid-cols-6 items-center p-5 mb-5">
+    <div className="border border-gray-200 shadow-md bg-white rounded-lg grid grid-cols-6 items-center p-5 mb-5">
       <div className="col-span-1 flex justify-center items-center">
         <img src={product.image} className="w-12" alt="" />
       </div>
@@ -47,14 +47,14 @@ const Cart = ({ cart: { id, productId, quantity } }) => {
         <div className="flex gap-3">
           <button
             onClick={handleDecrease}
-            className="bg-black text-white size-6"
+            className="bg-black text-white size-6 rounded-xl"
           >
             -
           </button>
           {quantity}
           <button
             onClick={handleIncrease}
-            className="bg-black text-white size-6"
+            className="bg-black text-white size-6 rounded-xl"
           >
             +
           </button>

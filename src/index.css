@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 /* Hide scrollbar for Chrome, Safari, and Edge */
-.categories-btn-group::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
   }
   

@@ -12,10 +12,10 @@ const Mainlayout = () => {
       <Footer />
       <Toaster
         toastOptions={{
-          duration: 5000,
+          duration: 2000,
 
           success: {
-            duration: 5000,
+            duration: 2000,
           },
         }}
       />
