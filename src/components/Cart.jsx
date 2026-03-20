@@ -34,27 +34,27 @@ const Cart = ({ cart: { id, productId, quantity } }) => {
   };
 
   return (
-    <div className="border border-gray-200 shadow-md bg-white rounded-lg grid grid-cols-6 items-center p-5 mb-5">
+    <div className="border border-cloud-mist shadow-sm bg-pure-white rounded-lg grid grid-cols-6 items-center p-5 mb-5 transition-all hover:shadow-md">
       <div className="col-span-1 flex justify-center items-center">
-        <img src={product.image} className="w-12" alt="" />
+        <img src={product.image} className="w-12 h-12 object-contain" alt={product.title} />
       </div>
       <div className="col-span-3">
-        <p className="">{product.title}</p>
-        <p className="text-gray-400">Price: ${product.price}</p>
+        <p className="text-jet-black font-medium">{product.title}</p>
+        <p className="text-deep-slate">Price: ${product.price}</p>
       </div>
       <div className="col-span-1">
-        <p className="mb-2">Quantity</p>
-        <div className="flex gap-3">
+        <p className="mb-2 text-deep-slate text-sm font-semibold">Quantity</p>
+        <div className="flex gap-3 items-center">
           <button
             onClick={handleDecrease}
-            className="bg-black text-white size-6 rounded-xl"
+            className="bg-ocean-steel text-pure-white size-6 rounded-lg flex items-center justify-center hover:bg-deep-slate transition-colors"
           >
             -
           </button>
-          {quantity}
+          <span className="text-jet-black font-bold">{quantity}</span>
           <button
             onClick={handleIncrease}
-            className="bg-black text-white size-6 rounded-xl"
+            className="bg-ocean-steel text-pure-white size-6 rounded-lg flex items-center justify-center hover:bg-deep-slate transition-colors"
           >
             +
           </button>

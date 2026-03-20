@@ -5,5 +5,10 @@
 /* Hide scrollbar for Chrome, Safari, and Edge */
 ::-webkit-scrollbar {
     display: none;
+}
+
+@layer base {
+  body {
+    @apply bg-cloud-mist text-jet-black;
   }
-  
+}
