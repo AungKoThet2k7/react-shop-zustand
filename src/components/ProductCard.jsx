@@ -42,24 +42,24 @@ const ProductCard = ({
   return (
     <div
       onClick={handleOpenDetail}
-      className="border border-gray-200 shadow-md hover:shadow-xl hover:scale-105 duration-300 bg-white rounded-lg p-5 flex flex-col items-start gap-5"
+      className="border border-cloud-mist shadow-sm hover:shadow-xl hover:scale-105 duration-300 bg-pure-white rounded-lg p-5 flex flex-col items-start gap-5 cursor-pointer"
     >
-      <img src={image} className="h-40" alt="" />
-      <p className="font-bold line-clamp-1">{title}</p>
+      <img src={image} className="h-40 mx-auto" alt={title} />
+      <p className="font-semibold text-jet-black line-clamp-1">{title}</p>
       <Rating rate={rate} />
       <div className="flex justify-between items-end w-full">
-        <p>$ {price}</p>
+        <p className="text-deep-slate font-bold">$ {price}</p>
         {carts.find((cart) => cart.productId == id) ? (
           <button
             onClick={handleAddedCart}
-            className="border border-black bg-black text-white shadow hover:shadow-md hover:scale-105 duration-300  rounded-full px-3 py-1"
+            className="border border-deep-slate bg-deep-slate text-pure-white shadow hover:shadow-md hover:scale-105 duration-300 rounded-full px-3 py-1"
           >
             Added
           </button>
         ) : (
           <button
             onClick={handleAddCart}
-            className="border border-gray-200 shadow hover:shadow-md hover:scale-105 duration-300 rounded-full px-3 py-1"
+            className="border border-ocean-steel bg-ocean-steel text-pure-white shadow hover:shadow-md hover:scale-105 duration-300 rounded-full px-3 py-1 hover:bg-deep-slate"
           >
             Add to Cart
           </button>

@@ -12,8 +12,10 @@ const Categorybtn = ({ category: { id, name, isActive } }) => {
     <button
     onClick={handleOnclick}
       className={`${
-        isActive ? "bg-black text-white hover:bg-black" : "hover:bg-gray-100"
-      } px-4 py-2 text-nowrap border border-gray-200  duration-300 rounded-full`}
+        isActive
+          ? "bg-ocean-steel text-pure-white shadow-md"
+          : "bg-white text-deep-slate hover:bg-ocean-steel hover:text-pure-white"
+      } px-4 py-2 text-nowrap border border-cloud-mist duration-300 rounded-full transition-all`}
     >
       {name}
     </button>
