@@ -42,7 +42,7 @@ const ProductCard = ({
   return (
     <div
       onClick={handleOpenDetail}
-      className="border border-gray-200 shadow-md hover:scale-103 hover:-translate-y-2 duration-300 bg-white rounded-lg p-5 flex flex-col items-start gap-5"
+      className="border border-gray-200 shadow-sm hover:scale-103 hover:-translate-y-2 duration-300 bg-white rounded-lg p-5 flex flex-col items-start gap-5"
     >
       <img src={image} className="h-40" alt="" />
       <p className="font-bold line-clamp-1 text-gray-800">{title}</p>
@@ -52,14 +52,14 @@ const ProductCard = ({
         {carts.find((cart) => cart.productId == id) ? (
           <button
             onClick={handleAddedCart}
-            className="border border-black bg-gray-800 text-gray-100 shadow hover:shadow-md hover:scale-105 duration-300  rounded-full px-3 py-1"
+            className="border border-black bg-gray-800 text-gray-100 shadow hover:shadow-sm hover:scale-105 duration-300  rounded-full px-3 py-1"
           >
             Added
           </button>
         ) : (
           <button
             onClick={handleAddCart}
-            className="border border-gray-200 text-gray-800 shadow hover:shadow-md hover:scale-105 duration-300 rounded-full px-3 py-1"
+            className="border border-gray-200 text-gray-800 shadow hover:shadow-sm hover:scale-105 duration-300 rounded-full px-3 py-1"
           >
             Add to Cart
           </button>

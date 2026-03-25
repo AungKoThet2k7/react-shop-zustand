@@ -36,7 +36,7 @@ const CartSection = () => {
           />
         )}
 
-        <div className="text-gray-800 border border-gray-200 shadow-md bg-white rounded-lg mt-auto mb-5">
+        <div className="text-gray-800 border border-gray-200 shadow-sm bg-white rounded-lg mt-auto mb-5">
           <Container className="px-16">
             <div className="flex justify-end gap-20 py-5">
               <div className="text-right">
@@ -53,7 +53,7 @@ const CartSection = () => {
               </div>
             </div>
             <div className="text-end mb-5">
-              <Link className="bg-gray-800 text-gray-100 hover:bg-jet-black shadow-md duration-300 rounded-full px-10 py-3 inline-block transition-all font-bold">
+              <Link className="bg-gray-800 text-gray-100 hover:bg-jet-black shadow-sm duration-300 rounded-full px-10 py-3 inline-block transition-all font-bold">
                 Order Now
               </Link>
             </div>

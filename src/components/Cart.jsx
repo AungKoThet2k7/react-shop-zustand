@@ -34,7 +34,7 @@ const Cart = ({ cart: { id, productId, quantity } }) => {
   };
 
   return (
-    <div className="border text-gray-800 border-gray-200 shadow-md bg-white rounded-lg grid grid-cols-6 items-center p-5">
+    <div className="border text-gray-800 border-gray-200 shadow-sm bg-white rounded-lg grid grid-cols-6 items-center p-5">
       <div className="col-span-1 flex justify-center items-center">
         <img src={product.image} className="w-12" alt="" />
       </div>
