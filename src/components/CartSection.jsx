@@ -23,7 +23,7 @@ const CartSection = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-5  mt-20">
+      <div className="flex flex-col gap-5 mt-20">
         {carts.map((cart) => (
           <Cart key={cart.id} cart={cart} />
         ))}
@@ -36,26 +36,26 @@ const CartSection = () => {
           />
         )}
 
-        <div
-          className="bg-white flex"
-        >
-          <Container className="px-5">
-            <div className="flex justify-end gap-20 border-t border-t-black py-5">
+        <div className="text-gray-800 border border-gray-200 shadow-md bg-white rounded-lg mt-auto mb-5">
+          <Container className="px-16">
+            <div className="flex justify-end gap-20 py-5">
               <div className="text-right">
-                <p className="text-gray-400">Total</p>
+                <p className="">Total</p>
                 <p className="text-xl font-bold">{total.toFixed(2)}</p>
               </div>
               <div className="text-right">
-                <p className="text-gray-400">Tax(10%)</p>
+                <p className="">Tax(5%)</p>
                 <p className="text-xl font-bold">{tax.toFixed(2)}</p>
               </div>
               <div className="text-right">
-                <p className="text-gray-400">Net Total</p>
-                <p className="text-xl font-bold">{NetTotal.toFixed(2)}</p>
+                <p className="">Net Total</p>
+                <p className="text-xl font-bold ">{NetTotal.toFixed(2)}</p>
               </div>
             </div>
-            <div className="text-end mb-7">
-              <Link className="border border-gray-200 shadow duration-300 rounded-full px-3 py-1">Order Now</Link>
+            <div className="text-end mb-5">
+              <Link className="bg-gray-800 text-gray-100 hover:bg-jet-black shadow-md duration-300 rounded-full px-10 py-3 inline-block transition-all font-bold">
+                Order Now
+              </Link>
             </div>
           </Container>
         </div>

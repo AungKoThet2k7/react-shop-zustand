@@ -10,7 +10,7 @@ const ErrorPage = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
           libero, sapiente optio veniam id unde.
         </p>
-        <Link to={"/"} className="bg-black text-white px-4 py-1 mx-auto">
+        <Link to={"/"} className="bg-gray-800 text-gray-100 px-4 py-1 mx-auto">
           Return Home
         </Link>
       </div>

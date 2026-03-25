@@ -51,9 +51,9 @@ const ProductDetail = () => {
               alt=""
             />
           </div>
-          <div className="col-span-1 flex flex-col items-start gap-3">
+          <div className="col-span-1 text-gray-800 flex flex-col items-start gap-3">
             <h1 className="text-2xl font-bold">{currentProduct.title}</h1>
-            <p className="bg-gray-200 text-sm rounded-full px-3 py-1">{currentProduct.category}</p>
+            <p className="bg-gray-100 text-sm rounded-full px-3 py-1">{currentProduct.category}</p>
             <p className="">{currentProduct.description}</p>
             <Rating rate={currentProduct.rating.rate} />
             <div className="flex justify-between items-center w-full">
@@ -61,7 +61,7 @@ const ProductDetail = () => {
               {carts.find((cart) => cart.productId === currentProduct.id) ? (
                 <button
                   onClick={handleAddedCart}
-                  className="border border-black bg-black text-white shadow hover:shadow-md hover:scale-105 duration-300  rounded-full px-3 py-1"
+                  className="border border-black bg-gray-800 text-gray-100 shadow hover:shadow-md hover:scale-105 duration-300  rounded-full px-3 py-1"
                 >
                   Added
                 </button>
