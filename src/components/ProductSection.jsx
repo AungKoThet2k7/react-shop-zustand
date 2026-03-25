@@ -21,7 +21,7 @@ const ProductSection = () => {
   return (
     <section className="px-5 mb-5">
       <Container>
-        <p className="text-xl text-deep-slate mb-5">Available Product</p>
+        <p className="text-xl text-gray-400 mb-5">Available Product</p>
         <div className="mb-7 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
           {products
             .filter(
