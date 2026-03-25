@@ -23,11 +23,11 @@ const ProductSection = () => {
   ).length;
 
   return (
-    <section className="px-5 pb-10 mt-4">
+    <section className="bg-gray-50 px-5 pb-10 mt-4">
       <Container>
         <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-5">
           Available Products
-          <span className="ml-2 bg-slate-700 text-slate-300 text-[10px] px-2 py-0.5 rounded-full">
+          <span className="ml-2 bg-gray-800 text-gray-100 text-[10px] px-2 py-0.5 rounded-full">
             {productCount}
           </span>
         </p>

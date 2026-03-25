@@ -47,14 +47,14 @@ const Cart = ({ cart: { id, productId, quantity } }) => {
         <div className="flex gap-3">
           <button
             onClick={handleDecrease}
-            className="bg-black text-white size-6 rounded-xl"
+            className="bg-gray-800 text-gray-100 size-6 rounded-xl"
           >
             -
           </button>
           {quantity}
           <button
             onClick={handleIncrease}
-            className="bg-black text-white size-6 rounded-xl"
+            className="bg-gray-800 text-gray-100 size-6 rounded-xl"
           >
             +
           </button>
