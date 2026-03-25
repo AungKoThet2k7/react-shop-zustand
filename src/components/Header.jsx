@@ -15,7 +15,7 @@ const Header = () => {
           </Link>
           <Link
             to={"/my-cart"}
-            className="border border-gray-200 shadow-md  px-5 py-2 relative rounded-full"
+            className="border border-gray-200 hover:bg-gray-100 shadow-md px-5 py-2 relative rounded-full"
           >
             My Cart
             <span className=" absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 text-gray-100 rounded-full bg-red-500 text-xs px-3 py-1 ">

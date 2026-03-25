@@ -23,7 +23,7 @@ const ProductSection = () => {
   ).length;
 
   return (
-    <section className="bg-gray-50 px-5 pb-10 mt-4">
+    <section className=" px-5 pb-10 mt-4">
       <Container>
         <p className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-5">
           Available Products
