@@ -8,7 +8,7 @@ const Footer = () => {
       <Container>
         Copyright &copy; {date.getFullYear()}{" "}
         <a href="" className="underline text-sky-400">
-          Mini Shop
+          AeroCart
         </a>
         . All rights reserved.
       </Container>
